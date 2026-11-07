@@ -1,0 +1,131 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8ed;
+    color: #4b3024;
+}
+
+/* ENCABEZADO */
+.cabecera {
+    background-color: #6b422d;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.menu-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* INICIO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #e9c99c;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* PRODUCTOS */
+.productos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.lista-productos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.producto-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 3px 10px #00000020;
+    position: relative;
+}
+
+.producto-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.producto-card h3 {
+    margin: 12px 0;
+}
+
+.etiqueta-oferta {
+    background-color: #b64b32;
+    color: white;
+    padding: 6px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+/* NOSOTROS Y CONTACTO */
+.nosotros,
+.contacto {
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.contacto {
+    background-color: #e9c99c;
+}
+
+/* PIE DE PÁGINA */
+.pie {
+    background-color: #6b422d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .cabecera {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+}
